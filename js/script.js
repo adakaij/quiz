@@ -10,9 +10,12 @@ $(document).ready(function() {
         var q3Result = $("#question3").val();
         var q4Result = $("#question4").val();
         var q5Result = $("#question5").val();
-        console.log(a4(q4Result));
-        var totalScore = a1(0) + a2(1) + a3("turtleduck") + a4(q4Result);// + a5(q5Result);
-        console.log("here", totalScore);
+        var num1 = a1(q1Result);
+        var num2 = a2(q2Result);
+        var num3 = a3(q3Result);
+        var num4 = a4(q4Result);
+        var num5 = a5(q5Result);
+        var totalScore = num1 + num2 + num3 + num4 + num5;
         if(totalScore <= 3){
             $("#finalAnswer").text("you should be an airbender");
         }
@@ -43,7 +46,7 @@ $(document).ready(function() {
             return 3;
         }
         else{
-            //window.alert("please enter a valid answer");
+            window.alert("please enter a valid answer for question 1");
         }
     }
     function a2(q2){
@@ -60,11 +63,11 @@ $(document).ready(function() {
             return 3;
         }
         else{
-            //$(q2).alert("please enter a valid answer");
+            window.alert("please enter a valid answer for question 2");
         }
     }
     function a3(q3){
-        if(q3 === "badger mole"){
+        if(q3 === "badgermole"){
             return 0;
         }
         else if(q3 === "eelhound"){
@@ -77,7 +80,7 @@ $(document).ready(function() {
             return 3;
         }
         else{
-           // $(q3).alert("please enter a valid answer");
+           window.alert("please enter a valid answer for question 3");
         }
     }
     function a4(q4){
@@ -94,48 +97,48 @@ $(document).ready(function() {
             return 3;
         }
         else{
-           // $(q4).alert("please enter a valid answer");
+           window.alert("please enter a valid answer for question 4");
         }
     }
     function a5(q5){
-        if(a5 === "rat"){
+        if(q5 === "rat"){
             return 0;
         }
-        else if(a5 === "ox"){
+        else if(q5 === "ox"){
             return 0;
         }
-        else if(a5 === "tiger"){
+        else if(q5 === "tiger"){
             return 0;
         }
-        else if(a5 === "rabbit"){
+        else if(q5 === "rabbit"){
             return 1;
         }
-        else if(a5 === "dragon"){
+        else if(q5 === "dragon"){
             return 1;
         }
-        else if(a5 === "snake"){
+        else if(q5 === "snake"){
             return 1;
         }
-        else if(a5 === "horse"){
+        else if(q5 === "horse"){
             return 2;
         }
-        else if(a5 === "ram"){
+        else if(q5 === "ram"){
             return 2;
         }
-        else if(a5 === "monkey"){
+        else if(q5 === "monkey"){
             return 2;
         }
-        else if(a5 === "rooster"){
+        else if(q5 === "rooster"){
             return 3;
         }
-        else if(a5 === "dog"){
+        else if(q5 === "dog"){
             return 3;
         }
-        else if(a5 === "pig"){
+        else if(q5 === "pig"){
             return 3;
         }
         else{
-           // $(q5).alert("please enter a valid answer");
+           window.alert("please enter a valid answer for question 5");
         }
     }
     

@@ -1,7 +1,7 @@
 .header {
     display: flex;
     justify-content: space-between;
-    color: #0f65ef;
+    color: #252635;
     font-weight: bold;
     font-size:15px;
 }
@@ -11,30 +11,27 @@
 }
 
 body {
-    background-color: white;
+    background-color: #278F80;
+    text-align: center;
 }
 
-.siliconValley {
-    width: 50%;
-    height:50%;
-}
 
 #caption {
     font-size: 20px;
-}
-
-#tomImg {
-    border-radius: 50%;
-    width: 50px;
 }
 
 a {
     color: #0f65ef;
     font-weight: bold;
 }
-
-#tom {
-    color: grey;
+h1{
+    font-family: 'Lato', sans-serif;
+}
+#caption{
+    font-family: 'Lato', sans-serif;
+}
+h2{
+    font-family: 'Lato', sans-serif;
 }
 
 .result {
@@ -43,9 +40,9 @@ a {
 
 button {
     margin-top: 10px;
-    color: white;
-    background-color: red;
-    font-size: 40px;
+    color: black;
+    background-color: #EAE9BA;
+    font-size: 30px;
     border-radius: 25px;
     border:3px groove black ;
     font-family: monospace;
