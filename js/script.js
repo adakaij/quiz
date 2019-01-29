@@ -17,19 +17,19 @@ $(document).ready(function() {
         var num5 = a5(q5Result);
         var totalScore = num1 + num2 + num3 + num4 + num5;
         if(totalScore <= 3){
-            $("#finalAnswer").text("you should be an airbender");
+            $("#finalAnswer").text("Congrats " + name + ", you should be an airbender!");
         }
         else if(totalScore <= 6 && totalScore > 3){
-            $("#finalAnswer").text("you should be an earthbender");
+            $("#finalAnswer").text("Congrats " + name + ", you should be an earthbender!");
         }
         else if(totalScore <= 9 && totalScore > 6){
-            $("#finalAnswer").text("you should be a waterbender");
+            $("#finalAnswer").text("Congrats " + name + ", you should be a waterbender!");
         }
         else if(totalScore <= 12 && totalScore > 9){
-            $("#finalAnswer").text("you should be a firebender");
+            $("#finalAnswer").text("Congrats " + name + ", you should be a firebender!");
         }
         else if(totalScore >= 15){
-            $("#finalAnswer").text("maybe you're not cut off to be a bender at all");
+            $("#finalAnswer").text("Sorry " + name + ", maybe you're not cut off to be a bender at all.");
         }
     });
     function a1(q1){
@@ -42,7 +42,7 @@ $(document).ready(function() {
         else if(q1 === "wealth"){
             return 2;
         }
-        else if(q1 === "fufillment"){
+        else if(q1 === "fulfillment"){
             return 3;
         }
         else{

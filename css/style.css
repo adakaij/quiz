@@ -43,9 +43,8 @@ button {
     color: black;
     background-color: #EAE9BA;
     font-size: 30px;
-    border-radius: 25px;
     border:3px groove black ;
-    font-family: monospace;
+    font-family: 'Lato', sans-serif;
 }
 
 body{
@@ -57,4 +56,8 @@ input{
     width:300px;
     height:250;
     padding:15px;
+}
+#finalAnswer{
+    margin-top: 15px;
+    font-size:30px;
 }
